@@ -22,54 +22,59 @@ export class HomePage implements OnInit {
       path:'\alert'
     }, 
     {
-      icono:'alert-circle',
+      icono:'accessibility-outline',
       name:'Avatar',
       path:'\Avatar'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Buttons',
       path:'\Buttons'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Cards',
       path:'\Cards'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Checks',
       path:'\Checks'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Fab',
       path:'\Fab'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Grid',
       path:'\Grid'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Infinite Scroll',
       path:'\Infinite Scroll'
     },
     {
-      icono:'alert-circle',
+      icono:'caret-forward-outline',
       name:'Input Forms',
       path:'\InputForms'
     },
     {
-      icono:'',
+      icono:'caret-forward-outline',
       name:'List-Sliding',
       path:'\List-Sliding'
     },
     {
-      icono:'',
+      icono:'caret-forward-outline',
       name:'List-Recorder',
       path:'\List-Recorder'
+    },
+    {
+      icono:'caret-forward-outline',
+      name:'loading',
+      path:'\loading'
     },
   ];
 
