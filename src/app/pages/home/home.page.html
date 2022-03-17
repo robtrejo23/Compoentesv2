@@ -1,19 +1,19 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title class="ion-text-center">home</ion-title>
+  <ion-toolbar color="medium">
+    <ion-title class="center">Home</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let componente of componentes" [routerLink]="componente.path">{{ componente.name }}
-      <ion-icon name={{componente.icono}} slot="start"></ion-icon>
-    </ion-item>
+    <!--Se crea un bucle con ngFor, para crear la lista automatizada-->
+    <ion-item
+    *ngFor="let componente of componentes"
+    color={{componente.color}}
+    class="zoom"
+    routerLink="{{componente.path}}"
+    >{{componente.name}}
+    <ion-icon name="{{componente.icono}}" slot="start"></ion-icon>
+  </ion-item>
   </ion-list>
- <!-- <ion-button color="primary" expand="block" fill="solid" routerLink="/alert">Alert</ion-button>
-  <ion-button color="secondary" expand="block" fill="solid" routerLink="/action-sheet">Action-sheet</ion-button> 
-  <ion-button color="primary" expand="block" fill="solid" routerLink="/alert">Avatar</ion-button>
-  <ion-button color="secondrary" expand="block" fill="solid" routerLink="/action-sheet">Buttons</ion-button> 
-  <ion-button color="primary" expand="block" fill="solid" routerLink="/alert">Cards</ion-button>
-  <ion-button color="secondary" expand="block" fill="solid" routerLink="/action-sheet">Checks</ion-button>  
---->
+
 </ion-content>

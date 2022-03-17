@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 interface Componentes {
   icono: string,
-  name: string,
-  path: string
+name: string,
+color: string,
+path: string
 }
 @Component({
   selector: 'app-home',
@@ -12,75 +13,155 @@ interface Componentes {
 export class HomePage implements OnInit {
   componentes: Componentes[] = [
     {
-      icono:'clipboard',
-      name:'action-sheet',
-      path:'\action-sheet'
+      icono: 'clipboard',
+      name: 'Action Sheet',
+      color: 'primary',
+      path: '/action-sheet'
+    },
+  
+  
+    {
+      icono: 'alert-circle',
+      name: 'Alert',
+      color: 'primary',
+      path: '/alert'
     },
     {
-      icono:'alert-circle',
-      name:'alert',
-      path:'\alert'
-    }, 
-    {
-      icono:'accessibility-outline',
-      name:'Avatar',
-      path:'\Avatar'
+      icono: 'person',
+      name: 'Avatar',
+      color: 'dark',
+      path: '/avatar'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Buttons',
-      path:'\Buttons'
+      icono: 'radio-button-on',
+      name: 'Buttons',
+      color: 'dark',
+      path: '/buttons'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Cards',
-      path:'\Cards'
+      icono: 'card',
+      name: 'Cards',
+      color: 'dark',
+      path: '/cards'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Checks',
-      path:'\Checks'
+      icono: 'shield-checkmark',
+      name: 'Chekcs',
+      color: 'dark',
+      path: '/checks'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Fab',
-      path:'\Fab'
+      icono: 'calendar',
+      name: 'Date-Time',
+      color: 'dark',
+      path: '/date-time'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Grid',
-      path:'\Grid'
+      icono: 'clipboard',
+      name: 'Fab',
+      color: 'dark',
+      path: '/fab'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Infinite Scroll',
-      path:'\Infinite Scroll'
+      icono: 'grid',
+      name: 'Grid',
+      color: 'dark',
+      path: '/grid'
     },
     {
-      icono:'caret-forward-outline',
-      name:'Input Forms',
-      path:'\InputForms'
+      icono: 'add',
+      name: 'Infinite-Scroll',
+      color: 'danger',
+      path: '/infinite-scroll'
     },
     {
-      icono:'caret-forward-outline',
-      name:'List-Sliding',
-      path:'\List-Sliding'
+      icono: 'code-working',
+      name: 'Input-Forms',
+      color: 'danger',
+      path: '/input-forms'
     },
     {
-      icono:'caret-forward-outline',
-      name:'List-Recorder',
-      path:'\List-Recorder'
+      icono: 'list',
+      name: 'List-Recorder',
+      color: 'danger',
+      path: '/list-recorder'
     },
     {
-      icono:'caret-forward-outline',
-      name:'loading',
-      path:'\loading'
+      icono: 'albums',
+      name: 'List-Sliding',
+      color: 'danger',
+      path: '/list-sliding'
     },
-  ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+    {
+      icono: 'reload',
+      name: 'Loading',
+      color: 'danger',
+      path: '/loading'
+    },
+    {
+      icono: 'apps',
+      name: 'Modal',
+      color: 'danger',
+      path: '/modal'
+    },
+    {
+      icono: 'albums',
+      name: 'Popover',
+      color: 'danger',
+      path: '/popover'
+    },
+    {
+      icono: 'bar-chart',
+      name: 'Progress-Bar',
+      color: 'secondary',
+      path: '/progress-bar'
+    },
+    {
+      icono: 'refresh-circle',
+      name: 'Refresher',
+      color: 'secondary',
+      path: '/refresher'
+    },
+    {
+      icono: 'search',
+      name: 'Search',
+      color: 'secondary',
+      path: '/search'
+    },
+    {
+      icono: 'bag-add',
+      name: 'Segment',
+      color: 'secondary',
+      path: '/segment'
+    },
+    {
+      icono: 'albums',
+      name: 'Slides',
+      color: 'secondary',
+      path: '/slides'
+    },
+    {
+      icono: 'folder-open',
+      name: 'Tabs',
+      color: 'secondary',
+      path: '/tabs'
+    },
+    {
+      icono: 'document',
+      name: 'Toast',
+      color: 'secondary',
+      path: '/toast'
+    },
+  
+  ]
+  
+  
+    constructor() { }
+  
+  
+  
+    ngOnInit() {
+    }
+  
 
 }

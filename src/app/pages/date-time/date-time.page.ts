@@ -9,6 +9,14 @@ export class DateTimePage implements OnInit {
 
   constructor() { }
 
+  confirm(){
+    console.log("Click en guardar")
+  }
+
+  reset(){
+
+  }
+
   ngOnInit() {
   }
 

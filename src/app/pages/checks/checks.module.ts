@@ -7,13 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ChecksPageRoutingModule } from './checks-routing.module';
 
 import { ChecksPage } from './checks.page';
+import { ComponentsModule } from '../../components/components.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ChecksPageRoutingModule
+    ChecksPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ChecksPage]
 })

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsPage implements OnInit {
 
+  star: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  
+  onClick(){
+    this.star = !this.star;
   }
 
 }
