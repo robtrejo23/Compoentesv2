@@ -57,12 +57,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/input-forms/input.module').then( m => m.InputPageModule)
   },
   {
-    path: 'list-sliding',
-    loadChildren: () => import('./pages/list-sliding/list-sliding.module').then( m => m.ListSlidingPageModule)
-  },
-  {
-    path: 'list-recorder',
-    loadChildren: () => import('./pages/list-recorder/list-recorder.module').then( m => m.ListRecorderPageModule)
+    path: 'list',
+    loadChildren: () => import('./pages/list/list-recorder.module').then( m => m.ListRecorderPageModule)
   },
   {
     path: 'loading',
