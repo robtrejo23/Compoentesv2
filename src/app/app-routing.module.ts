@@ -66,7 +66,7 @@ const routes: Routes = [
   },
   {
     path: 'loading',
-    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LOadingPageModule)
+    loadChildren: () => import('./pages/Loading/loading.module').then( m => m.LoadingPageModule)
   },
 ];
 
