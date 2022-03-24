@@ -70,7 +70,7 @@ export class AlertPage implements OnInit {
           name: 'name2',
           type: 'text',
           id: 'name2-id',
-          value: 'Loya Jimenez',
+          value: 'Trejo Jiménez',
           placeholder: 'Apellidos'
         },
         // multiline input.

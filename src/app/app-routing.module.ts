@@ -41,20 +41,20 @@ const routes: Routes = [
     loadChildren: () => import('./pages/date-time/date-time.module').then( m => m.DateTimePageModule)
   },
   {
-    path: 'fab',
-    loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
   },
   {
     path: 'grid',
     loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
   },
   {
-    path: 'infinite',
-    loadChildren: () => import('./pages/infinite/infinite.module').then( m => m.InfinitePageModule)
+    path: 'infinite-scroll',
+    loadChildren: () => import('./pages/Infinite-scroll/infinite.module').then( m => m.InfinitePageModule)
   },
   {
-    path: 'input',
-    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+    path: 'input-forms',
+    loadChildren: () => import('./pages/input-forms/input.module').then( m => m.InputPageModule)
   },
   {
     path: 'list-sliding',
