@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title class="center">Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <!--Se crea un bucle con ngFor, para crear la lista automatizada-->
+    <ion-item
+    *ngFor="let componente of componentes"
+    color={{componente.color}}
+    class="zoom"
+    routerLink="{{componente.path}}"
+    >{{componente.name}}
+    <ion-icon name="{{componente.icono}}" slot="start"></ion-icon>
+  </ion-item>
+  </ion-list>
+
+</ion-content>

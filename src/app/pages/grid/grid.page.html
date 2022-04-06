@@ -1,0 +1,30 @@
+<app-header titulo="Grid"></app-header>
+<ion-content>
+
+  <ion-grid>
+    <ion-row fixed class="ion-align-items-center">
+        <ion-col size-xs="12" size-xl="2" size-lg="3" size-md="6" size-sm="12" >Grid</ion-col>
+        <ion-col size-xs="12" size-xl="2" size-lg="3" size-md="6" size-sm="12">Grid</ion-col>
+        <ion-col size-xs="12" size-xl="2" size-lg="3" size-md="6" size-sm="12">Grid</ion-col>
+        <ion-col size-xs="12" size-xl="2" size-lg="3" size-md="6" size-sm="12">Grid</ion-col>
+    </ion-row>
+</ion-grid>
+
+<ion-grid fixed>
+    <ion-row>
+        <ion-col *ngFor="let item of [1,1,1,1,1,1,1,1]" 
+        size-xl="12" size-lg="3" size-md="6" size-sm="12">
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+                    <ion-card-title>Awesome Title</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in saepe facilis ea minima itaque dignissimos optio! Soluta qui nisi, dolore maxime minus sed ex, tempore quis similique ea placeat?
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>

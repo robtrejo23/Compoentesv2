@@ -1,0 +1,39 @@
+<app-header titulo="Date"></app-header>
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text="siguiente"
+      defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Fecha y Hora</ion-label>
+      <ion-datetime value="15-12-2022"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Red Only</ion-label>
+      <ion-datetime value="redonly"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Red Only</ion-label>
+      <ion-datetime min="2017-12-08" max="2022-03-09" value="2022-03-09"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+    <ion-label>Custom</ion-label>
+    <ion-button slot="button">
+      <ion-buttons></ion-buttons>
+    </ion-button>
+      
+    </ion-item>
+
+   
+  </ion-list>
+  
+</ion-content>

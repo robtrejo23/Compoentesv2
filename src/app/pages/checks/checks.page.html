@@ -1,0 +1,31 @@
+<app-header titulo="Buttons"></app-header>
+
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text="siguiente"
+      defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let entry of check">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end" 
+      [color]="entry.color"
+      (Click)="onClick(entry)"
+      [(ngModel)]="entry.isChecked">
+
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
+<ion-button (click)="verData($event)" expand="block">
+  ver lista
+</ion-button>
+</ion-content>
