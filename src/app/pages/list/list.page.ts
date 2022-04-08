@@ -5,11 +5,11 @@ import { IonList } from '@ionic/angular';
 
 
 @Component({
-  selector: 'app-list-recorder',
-  templateUrl: './list-recorder.page.html',
-  styleUrls: ['./list-recorder.page.scss'],
+  selector: 'app-list',
+  templateUrl: './list.page.html',
+  styleUrls: ['./list.page.scss'],
 })
-export class ListRecorderPage implements OnInit {
+export class ListPage implements OnInit {
 
   usuarios: Observable<any>
   @ViewChild(IonList) ionList: IonList

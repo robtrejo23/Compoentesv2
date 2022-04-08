@@ -7,18 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 
-import { ListRecorderPageRoutingModule } from './list-recorder-routing.module';
+import { ListPageRoutingModule } from './list-routing.module';
 
-import { ListRecorderPage } from './list-recorder.page';
+import { ListPage } from './list.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ListRecorderPageRoutingModule,
+    ListPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [ListRecorderPage]
+  declarations: [ListPage]
 })
-export class ListRecorderPageModule {}
+export class ListPageModule {}
